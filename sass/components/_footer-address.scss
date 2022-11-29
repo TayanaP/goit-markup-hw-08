@@ -1,0 +1,41 @@
+.footer-address__desc{
+    margin-top: 20px;
+}
+
+.footer-address__text{
+    margin-bottom: 9px;
+
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71; 
+
+    color: var(--secondary-color);
+}
+
+.footer-address__list{
+    display: block; 
+}
+
+.footer-address__item{
+    margin-top: 9px;
+
+    &:not(:last-child){
+        margin-bottom: 9px;
+    }
+}
+
+.footer-address__link{ 
+    text-decoration: none;
+    font-style: normal;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus{
+        color: var(--text-accent);
+    }
+}
+
+   
