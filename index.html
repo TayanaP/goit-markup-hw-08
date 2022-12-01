@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
    
 
 </head>
@@ -17,6 +17,13 @@
         <div class="header__container container">
         <nav class="nav">
             <a class="header-logo__link" href="./index.html" >Web<span class="header__logo">Studio</span></a>
+            <button class="header__button" type="button">
+                <svg class="header__icon" width="40" height="40">
+                    <use class="" href="./images/symbol-defs2.svg#icon-close_button"></use>
+                    <use href="./images/symbol-defs2.svg#icon-menu"></use>
+                </svg>
+            </button>
+
             <ul class="nav__list list">
                 <li class="nav__item"><a href="./index.html" class="nav__link current marker">Студія</a></li>
                 <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
@@ -363,6 +370,8 @@
     </div>
     </footer>
 
+    <!-- --Modal menu-- -->
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__button" type="button" data-modal-close>
@@ -413,6 +422,47 @@
         </div>
     </div>
 
+
+    <!-- --Mobile menu--
+    <div class="mobile-menu__container">
+        <ul class="mobile-menu list">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="">Студія</a>  
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="">Контакти</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-contacts list">
+            <li class="mobile-contacts__item">
+              <a href="tel:+380961111111" class="mobile-contacts__link link">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item">
+              <a href="mailto:info@devstudio.com" class="mobile-contacts__link link">info@devstudio.com</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-socials list">
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link link">Instagram</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link link">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link link">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link link">LinkedIn</a>
+            </li>
+          </ul>
+    </div> -->
+
+    
     <script src="./js/modal.js"></script>
     
 </body>

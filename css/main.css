@@ -53,7 +53,7 @@ img {
   margin-right: auto;
 }
 
-.button, .button-list__link, .modal-form__button, .modal__button, .form-field__button, .hero__button {
+.button, .button-list__link, .modal-form__button, .modal__button, .form-field__button, .hero__button, .header__button {
   border-radius: 4px;
   border: none;
   font-family: "Roboto", sans-serif;
@@ -67,9 +67,19 @@ img {
   -webkit-transition: background-color var(--animation);
   transition: background-color var(--animation);
 }
-.button:hover, .button-list__link:hover, .modal-form__button:hover, .modal__button:hover, .form-field__button:hover, .hero__button:hover, .button:focus, .button-list__link:focus, .modal-form__button:focus, .modal__button:focus, .form-field__button:focus, .hero__button:focus {
+.button:hover, .button-list__link:hover, .modal-form__button:hover, .modal__button:hover, .form-field__button:hover, .hero__button:hover, .header__button:hover, .button:focus, .button-list__link:focus, .modal-form__button:focus, .modal__button:focus, .form-field__button:focus, .hero__button:focus, .header__button:focus {
   background-color: #188CE8;
   color: var(--secondary-color);
+}
+
+.header__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .hero__button {
