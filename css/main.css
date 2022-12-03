@@ -52,6 +52,21 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    widht: 480px;
+  }
+}
+@media screen and (min-width: 768x) {
+  .container {
+    widht: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    widht: 1200px;
+  }
+}
 
 .button, .button-list__link, .modal-form__button, .modal__button, .form-field__button, .hero__button {
   border-radius: 4px;

@@ -1,5 +1,5 @@
 .team{
-    @include section(94px, 94px);
+    @extend %section;
     
     background: #F5F4FA;
 }
