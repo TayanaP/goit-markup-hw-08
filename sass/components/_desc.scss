@@ -16,8 +16,6 @@
 }
              
 .desc__item{
-    margin-bottom: 30px;
-
     @media screen and (min-width: 768px) {
         width: calc((100% - 2 * 30px) / 2);
     }
@@ -31,7 +29,6 @@
         margin-bottom: 30px;
         }
     }
- 
 }
 
 .desc__wrap{
