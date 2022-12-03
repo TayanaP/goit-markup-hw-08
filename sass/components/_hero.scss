@@ -1,11 +1,11 @@
-.hero{
-    max-width: 1600px;
-    height: 600px;
+.hero__container{
+    max-width: 480px;
+    max-height: 400px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    padding: 200px 0;
-   
+    padding: 118px 0;
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,19 +16,36 @@
         rgba(47, 48, 58, 0.4), 
         rgba(47, 48, 58, 0.4)), 
         url(../images/team.jpg);
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        max-height: 400px;
+        padding: 118px 0;
     }
+    
+     @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        max-height: 600px;
+        padding: 200px 0;
+    }    
+}
 
 .hero__title{
     margin-bottom: 30px;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 1.6;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color: var(--secondary-color);
+
+     @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.4;
+    }    
 }
 
 

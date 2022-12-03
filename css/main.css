@@ -104,7 +104,7 @@ img {
 }
 
 .hero__button {
-  padding: 10px 32px;
+  padding: 10px 24px;
 }
 
 .form-field__button {
@@ -314,13 +314,13 @@ img {
   fill: currentColor;
 }
 
-.hero {
-  max-width: 1600px;
-  height: 600px;
+.hero__container {
+  max-width: 480px;
+  max-height: 400px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -328,16 +328,36 @@ img {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/team.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team.jpg);
 }
+@media screen and (min-width: 768px) {
+  .hero__container {
+    max-width: 768px;
+    max-height: 400px;
+    padding: 118px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    max-width: 1600px;
+    max-height: 600px;
+    padding: 200px 0;
+  }
+}
 
 .hero__title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -447,6 +467,12 @@ img {
 
 .nopadding {
   padding-top: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .images {
+    display: none;
+  }
 }
 
 .images__title {
