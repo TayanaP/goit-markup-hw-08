@@ -1,9 +1,9 @@
 @import './utils/variables';
-@import './utils/placeholders';
 
 @import './base/reset';
 @import './base/base';
 
+@import './components/section';
 @import './components/container';
 @import './components/buttons';
 @import './components/header';
