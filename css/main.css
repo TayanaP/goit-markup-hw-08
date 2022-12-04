@@ -124,7 +124,8 @@ img {
   padding-bottom: 10px;
   padding-left: 28px;
   padding-right: 28px;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -233,13 +234,13 @@ img {
   }
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .header__menu {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     padding: 0;
-    margin: 0;
+    margin-left: auto;
     border: none;
     background-color: transparent;
   }
@@ -463,8 +464,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
-  height: 120px;
   padding: 25px 190px;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -627,12 +626,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .team__item {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    width: calc((100% - 120px) / 4);
+    width: calc((100% - 90px) / 4);
   }
 }
 @media screen and (max-width: 767px) {
@@ -753,19 +752,17 @@ img {
   gap: 30px;
 }
 
-@media screen and (min-width: 480px) {
-  .company__item {
-    width: calc((100% - 60px) / 2);
-  }
+.company__item {
+  width: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 786px) {
   .company__item {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .company__item {
-    width: calc((100% - 180px) / 6);
+    width: calc((100% - 150px) / 6);
   }
 }
 
@@ -814,16 +811,23 @@ img {
   background: #2F303A;
 }
 
-@media screen and (min-width: 480px) {
-  .footer__container {
-    display: block;
-    text-align: center;
-  }
+.footer__container {
+  display: block;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
-    display: block;
-    width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -831,7 +835,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 1200px;
   }
 }
 
@@ -1068,10 +1071,8 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .form-field {
-    display: block;
-  }
+.form-field {
+  display: block;
 }
 @media screen and (min-width: 1200px) {
   .form-field {
@@ -1081,26 +1082,26 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 10px;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .form-field__input {
-    display: block;
-    width: 450px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    outline: 1px solid transparent;
-    outline-offset: -1px;
-    background: transparent;
-    -webkit-transition: outline-color var(--animation), border var(--animation);
-    transition: outline-color var(--animation), border var(--animation);
-  }
+.form-field__input {
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  background: transparent;
+  -webkit-transition: outline-color var(--animation), border var(--animation);
+  transition: outline-color var(--animation), border var(--animation);
 }
 @media screen and (min-width: 1200px) {
   .form-field__input {
@@ -1110,10 +1111,10 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 358px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
+    margin-bottom: 0;
     border: 1px solid rgba(255, 255, 255, 0.3);
     -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
