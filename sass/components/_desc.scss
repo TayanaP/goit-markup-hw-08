@@ -6,6 +6,8 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         gap: 30px;
     }
 
@@ -17,19 +19,17 @@
              
 .desc__item{
     @media screen and (min-width: 768px) {
-        width: calc((100% - 2 * 30px) / 2);
+        width: calc((100% - 1 * 30px) / 2);
     }
 
     @media screen and (min-width: 1200px) {
-        width: calc((100% - 4 * 30px) / 4);
+        width: calc((100% - 3 * 30px) / 4);
     }
-
     &:not(:last-child){
-        @media screen and (max-width: 767px) {
         margin-bottom: 30px;
         }
     }
-}
+
 
 .desc__wrap{
     display: flex;

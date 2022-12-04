@@ -1,15 +1,32 @@
 .header-address__list{
-    @media screen and (min-width: 480px){
-        display: none;
-    }
+    display: none;
+
+    @media screen and (min-width: 768px){
+    display: block;
+    margin-left: auto;
+    padding-bottom: 21px;
+    padding-top: 21px;
+       }
 
     @media screen and (min-width: 1200px){
-    display: flex;
+     display: flex;
      margin-left: auto;
      gap: 50px;
+
+    }
    }
+
+.header-address__item{
+    @media screen and (max-width: 1199px){
+    margin-bottom: 10px;
 }
-   
+}
+
+.header-address__item:not(:last-child){
+    @media screen and (max-width: 1199px){
+    margin-bottom: 10px;
+}
+}
    
 .header-address__item + .item{
    margin-left: 50px;
@@ -34,10 +51,13 @@
     &:focus{
         color: var(--text-accent);
     }
-   
+
+    @media screen and (min-width: 1200px){
+        
+    }
+
 }
-   
- 
+
 .header-address__icon{
     fill: currentColor;
 }
