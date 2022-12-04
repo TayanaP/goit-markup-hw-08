@@ -1,4 +1,15 @@
 .header-logo__link{
+    @media screen and (max-width: 1199px){
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none; 
+    
+    color: var(--text-accent); 
+    }     
+
+    @media screen and (min-width: 1200px){
     margin-right: 93px;
 
     font-family: 'Raleway';
@@ -9,12 +20,25 @@
     
     color: var(--text-accent);    
 }
+}
+
 
 .header__logo{
+    @media screen and (max-width: 1199px){
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.17;
+    
+        color: #000000;
+    }
+
+    @media screen and (min-width: 1200px){
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
 
     color: #000000;
+}
 }

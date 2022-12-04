@@ -1,6 +1,9 @@
 .footer-logo__link {
-    @media screen and (max-width: 767px){
-    margin-right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    
+    @media screen and (max-width: 1199px){
+    
 
     font-family: 'Raleway';
     font-weight: 700;
@@ -11,7 +14,7 @@
     color: var(--text-accent);  
     } 
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
     margin-right: 0;
 
     font-family: 'Raleway';
@@ -25,7 +28,7 @@
 }
 
 .footer__logo{
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 1199px){
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 24px;
@@ -34,7 +37,7 @@
         color: var(--secondary-color);  
         } 
     
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width:1200px) {
             font-family: 'Raleway';
             font-weight: 700;
             font-size: 26px;
