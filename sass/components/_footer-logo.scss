@@ -1,4 +1,17 @@
 .footer-logo__link {
+    @media screen and (max-width: 767px){
+    margin-right: 0;
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none; 
+    
+    color: var(--text-accent);  
+    } 
+
+    @media screen and (min-width: 768px) {
     margin-right: 0;
 
     font-family: 'Raleway';
@@ -6,18 +19,28 @@
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none; 
-    
-    color: var(--text-accent);    
+
+    color: var(--text-accent); 
+    }  
 }
 
 .footer__logo{
-    margin-bottom: 20px;
-   
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+    @media screen and (max-width: 767px){
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.17;
+        
+        color: var(--secondary-color);  
+        } 
+    
+        @media screen and (min-width: 768px) {
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.2;
 
-    color: var(--secondary-color);
+            color: var(--secondary-color); 
+        } 
 }
 
