@@ -94,10 +94,10 @@
     }
   }
   
-  .button-menu:hover,
-  .button-menu:focus {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+//   .button-menu:hover,
+//   .button-menu:focus {
+//     background-color: rgba(0, 0, 0, 0.1);
+//   }
   
   .menu-container {
     display: flex;
@@ -187,6 +187,16 @@
     letter-spacing: 0.02em;
 
     color: var( --text-accent);
+  }
+
+  .mobile-icon {
+    fill: var(--title-text-color);
+
+    &:hover,
+    &:focus {
+    fill: var(--text-accent); 
+    }
+
   }
 
   

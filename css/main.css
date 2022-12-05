@@ -282,11 +282,6 @@ img {
     display: none;
   }
 }
-.button-menu:hover,
-.button-menu:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .menu-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,6 +375,13 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--text-accent);
+}
+
+.mobile-icon {
+  fill: var(--title-text-color);
+}
+.mobile-icon:hover, .mobile-icon:focus {
+  fill: var(--text-accent);
 }
 
 .nav {
