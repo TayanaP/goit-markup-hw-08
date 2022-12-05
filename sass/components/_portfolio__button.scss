@@ -1,12 +1,24 @@
+
 .button-list{
-    margin-bottom: 50px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 40px;
+   
+    @media screen and (min-width:768px){
+        justify-content: center;  
+     }
+}
+
+.button-list__item {
+    margin-right: 8px;
 }
 
 .button-list__item:not(:last-child){
     margin-right: 8px;
 }
+
 
 .button-list__link{
     @extend .button;

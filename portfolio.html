@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     
 </head>
 
@@ -18,6 +18,16 @@
         <div class="header__container container">
         <nav class="nav">
             <a class="header-logo__link" href="./index.html" >Web<span class="header__logo">Studio</span></a>
+            <button type="button" class="header__menu is-open"
+            aria-expanded="false" 
+            aria-controls="mobile-menu__container"
+            data-menu-button>
+               <svg class="header__icon" width="40" height="40"
+               aria-label="Перемикач мобільного меню">
+                   <use class="icon-cross" href="./images/symbol-defs2.svg#icon-close_40px"></use>
+                   <use class="icon-menu"  href="./images/symbol-defs2.svg#icon-menu_40px"></use>
+               </svg>
+           </button>
             <ul class="nav__list list">
                 <li class="nav__item"><a href="./index.html" class="nav__link">Студія</a></li>
                 <li class="nav__item"><a href="./portfolio.html" class="nav__link current marker">Портфоліо</a></li>
@@ -57,7 +67,7 @@
                 <ul class="project-list list">
                     <li class="project-list__item">
                     <div class="project-list__overlay">
-                        <img src="./images/techno.jpg" alt="Технокряк" width="370" height="294">
+                        <img class="project-list__img" src="./images/techno.jpg" alt="Технокряк" width="370" height="294">
                     <div class="project-list__text">
                         <p class="project-list__slogan">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
@@ -69,7 +79,7 @@
                     </li>
                     <li class="project-list__item">
                         <div class="project-list__overlay">
-                        <img src="./images/poster.jpg" alt="Постер" width="370" height="294">
+                        <img class="project-list__img" src="./images/poster.jpg" alt="Постер" width="370" height="294">
                         <div class="project-list__text">
                             <p class="project-list__slogan">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -81,7 +91,7 @@
                     </li>
                     <li class="project-list__item">
                         <div class="project-list__overlay">
-                        <img src="./images/seafood.jpg" alt="Ресторан" width="370" height="294">
+                        <img class="project-list__img" src="./images/seafood.jpg" alt="Ресторан" width="370" height="294">
                         <div class="project-list__text">
                             <p class="project-list__slogan">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -93,7 +103,7 @@
                     </li>
                     <li class="project-list__item">
                         <div class="project-list__overlay">
-                        <img src="./images/prime.jpg" alt="Гаджет" width="370" height="294">
+                        <img class="project-list__img" src="./images/prime.jpg" alt="Гаджет" width="370" height="294">
                         <div class="project-list__text">
                             <p class="project-list__slogan">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -105,7 +115,7 @@
                     </li>
                     <li class="project-list__item">
                         <div class="project-list__overlay">
-                        <img src="./images/boxes.jpg" alt="Коробка" width="370" height="294">
+                        <img class="project-list__img" src="./images/boxes.jpg" alt="Коробка" width="370" height="294">
                         <div class="project-list__text">
                             <p class="project-list__slogan">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -117,7 +127,7 @@
                     </li>
                     <li class="project-list__item">
                         <div class="project-list__overlay">
-                        <img src="./images/display.jpg" alt="Дисплей" width="370" height="294">
+                        <img class="project-list__img" src="./images/display.jpg" alt="Дисплей" width="370" height="294">
                         <div class="project-list__text">
                             <p class="project-list__slogan">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -129,7 +139,7 @@
                     </li>
                     <li class="project-list__item">
                         <div class="project-list__overlay">
-                        <img src="./images/edition.jpg" alt="Видання" width="370" height="294">
+                        <img class="project-list__img" src="./images/edition.jpg" alt="Видання" width="370" height="294">
                         <div class="project-list__text">
                             <p class="project-list__slogan">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -141,7 +151,7 @@
                     </li>
                     <li class="project-list__item">
                         <div class="project-list__overlay">
-                        <img src="./images/project.jpg" alt="Проект" width="370" height="294">
+                        <img class="project-list__img" src="./images/project.jpg" alt="Проект" width="370" height="294">
                         <div class="project-list__text">
                             <p class="project-list__slogan">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -153,7 +163,7 @@
                     </li>
                     <li class="project-list__item">
                         <div class="project-list__overlay">
-                        <img src="./images/business.jpg" alt="Бізнес" width="370" height="294">
+                        <imgclass="project-list__img" src="./images/business.jpg" alt="Бізнес" width="370" height="294">
                         <div class="project-list__text">
                             <p class="project-list__slogan">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>

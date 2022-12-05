@@ -58,6 +58,12 @@
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;  
+
+    &:hover,
+    &:focus{
+        background-color: var(--secondary-color);
+        color: var(--secondary-color);
+    }
 }
 
 .modal__icon{
