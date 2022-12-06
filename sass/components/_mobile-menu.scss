@@ -77,7 +77,16 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
 
-    color:var(--title-text-color)
+    color:var(--title-text-color);
+
+  //   &.current{
+  //     color: var(--text-accent);
+  // }
+
+    &:hover,
+    &:focus{
+        color: var(--text-accent);
+    }
   }
 
   .mobile-contacts{
@@ -112,15 +121,26 @@
     gap: 20px;
   }
 
-  .marker::after{
+  .mobile-socials__item {
+    position: relative;
+  }
+
+  .mobile-socials__item:not(:last-child)::after {
     content: '';
+    display: block;
+    position: absolute;
+    top: 0;
     right: -10px;
-    bottom: 10px;
-    width: 22px;
-    height: 1px;
+    width: 1px;
+    height: 22px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
-}
+  }
+
+  .active {
+    color: var(--text-accent);
+  }
+
+
 
   .mobile-socials__link {
     font-family: 'Roboto';
