@@ -57,6 +57,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section, .company, .team, .images, .desc {
@@ -1605,6 +1607,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 77px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -1613,15 +1616,21 @@ img {
   transition: transform var(--animation);
   transition: transform var(--animation), -webkit-transform var(--animation);
 }
+@media screen and (min-width: 768px) {
+  .project-list__text {
+    padding-top: 49px;
+    padding-right: 24px;
+    padding-bottom: 77px;
+    padding-left: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-list__text {
+    padding: 62px 24px;
+  }
+}
 
 .project-list__slogan {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 322px;
-  height: 168px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
